@@ -1,0 +1,93 @@
+/*
+--------------------------------------
+Table of contents
+1. menu
+2. page layout with flex box
+3. text and image format classes
+4. js file fomatting
+--------------------------------------
+*/
+
+/*menu*/
+#bannerimg {
+    display: flex;
+    width: 98%;
+    height: 12vw;
+    border: 5px solid #262626;
+    padding: 10px;
+    margin: 2px;
+}
+
+
+
+
+/*page layout with flexbox*/
+/*https://www.w3schools.com/css/css3_flexbox_container.asp*/
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid #262626;
+    margin-bottom: 20px;
+    align-items: stretch;
+    background-color: #7D7D7D;
+}
+
+.flexbox-item {
+    margin: 5px;
+    padding: 3px;
+    border: 3px solid #262626;
+    background-color: #D9D9D9;
+}
+
+.flexbox-item-1 {
+    min-height: 400px;
+    flex-basis: 65%;
+    background-color: #000000;
+    justify-items: center;
+}
+
+.flexbox-item-2 {
+    flex-basis: 35%;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flexbox-item-3 {
+    flex-grow: 3;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    min-height: 300px;
+    background-color: #E7AA32;
+}
+
+
+/*text and image format classes*/
+img {
+    border: 5px solid #000;
+    padding: 2px;
+ 
+}
+
+
+
+/*js file formatting*/
+canvas {
+    border: thin solid #FF2424;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+}
+
+
+/*https://color.adobe.com/Wolfy-color-theme-4024444/*/
+
+.another-container {
+    display: flex;
+    border: 5px solid #000000;
+    align-content: space-around;
+    padding: 40px;
+    margin-top: 20px;
+    font-family: Arial;
+    font-size: 28px;
+}

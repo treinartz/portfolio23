@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MyPortfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Notable' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"> </script>
+    <script src="javascript/ball.js"> </script>
+
+     <!-- scripts for rendering -->
+     <script src="https://toolness.github.io/p5.js-widget/p5-widget.js"></script>
+     <script type="text/javascript" src="../javascript/jquery-1.9.1.min.js"></script>
+     <script type="text/javascript" src="../javascript/render.js"></script>
+     <!-- code highlighting -->
+     <script type="text/javascript" src="../javascript/prism.js"></script>
+     <link rel="stylesheet" href="../css/prism.css" type="text/css" />
+     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+     <link rel="stylesheet" type="text/css" href="../css/mainNav.css">
+     <link rel="stylesheet" href="../css/forcode.css" type="text/css" />
+</head>
+
+<body>
+    <h1><img id="bannerimg" src="../images/iowa.png" alt="Struggle Bus"></h1>
+    <!--menu-->
+    <nav id="main-nav">
+      <ul>
+          <li>
+              <a href="../index.html">Home</a>
+          </li>
+          <li>
+              <a href="myProjects.html">Projects
+                  <span class="arrow">&#x25BC;</span>
+              </a>
+              <ul class="submenu">
+                  <li>
+                      <a href="#">No Objects Projects</a>
+                  </li>
+                  <li>
+                      <a href="#">Strings</a>
+                  </li>
+                  <li>
+                      <a href="#">Objects and Functions
+                          <span class="arrow">&#x25B6;</span>
+                      </a>
+                      <ul class="submenu-2">
+                          <li>
+                              <a href="#">Loops</a>
+                          </li>
+                          <li>
+                              <a href="#">Arrays</a>
+                          </li>
+                          <li>
+                              <a href="#">AdvancedObjects</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+
+          <li>
+              <a href="#">Resources
+                  <span class="arrow">&#9989;</span>
+              </a>
+              <ul class="submenu">
+                  <li>
+                      <a href="https://p5js.org/reference/">P5 API</a>
+                  </li>
+                  <li>
+                      <a href="https://processing.org/reference/">ProcessingAPI</a>
+                  </li>
+                  <li>
+                      <a href="https://www.tiobe.com/tiobe-index/">Tiobe</a>
+                  </li>
+                  <li>
+                      <a href="https://processing.org/">Processing</a>
+                  </li>
+              </ul>
+          </li>
+          
+
+          
+<li>
+              <a href="#">AboutMe
+                  <span class="arrow">&#x1f601;</span>
+              </a>
+              <ul class="submenu">
+                  <li>
+                      <a href="#">CompSci</a>
+                  </li>
+                  <li>
+                      <a href="#">Accomplishments</a>
+                  </li>
+                  <li>
+                      <a href="#">Interests</a>
+                  </li>
+                  <li>
+                      <a href="#">Future Plans</a>
+                  </li>
+
+                  <li>
+                      
+                      <a href="#">DataViz<span class="arrow">&#x25B6;  </span>  </a>
+                         
+                      </a>
+                      <ul class="submenu-2">
+                          <li>
+                              <a href="#">Future Plans</a>
+                          </li>
+                          <li>
+                              <a href="#">UMN</a>
+                          </li>
+                          <li>
+                              <a href="#">Books I have read</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          
+
+                    <li>
+                        <a href="deepThoughts.html">DeepThoughts</a>
+          </li>
+      </ul>
+  </nav>
+
+    <!--/menu-->
+  
+    <h1>Project1: A simple face!</h1>
+    <div class="flexbox-container">
+        <div class="flexbox-item  flexbox-item-1">
+            <script type="text/p5" data-height="450" data-autoplay data-preview-width="400">
+                var diam;
+var offset;
+var x;
+var y;
+
+function setup() {
+  createCanvas(400, 400);
+  angleMode(DEGREES);
+  diam = 150;
+  offset = 0.2 * diam;
+  x = width / 2;
+  y = height / 2;
+}
+
+function draw() {
+  background(220);
+
+  fill(255, 200, 0);
+  ellipse(x, y, diam, diam);
+
+  fill(0, 0, 255);
+  ellipse(x - offset, y - offset, diam / 7, diam / 7);
+  ellipse(x + offset, y - offset, diam / 7, diam / 7);
+  noFill();
+  arc(x, y, diam * 0.6, diam * 0.4, 0, 180);
+}
+
+</script>
+        </div>
+
+        
+
+
+        <div class="flexbox-item  flexbox-item-2">
+            Draw:Here are some small
+            examples of how to draw things. Read and experiment with the code. Then, either try to reproduce the code or try your own by "spinning off," or "remixing" what you see here. The essence of learning is through exploration and mistakes cast as learning opportunities. </div>
+
+
+    </div>
+
+    
+ 
+
+    <h1>Project2: Not so simple face!</h1>
+    <div class="flexbox-container">
+        <div class="flexbox-item  flexbox-item-1">
+            <script type="text/p5" data-height="450" data-autoplay data-preview-width="400">
+              var diam;
+              var offset;
+              var x;
+              var y;
+              
+              function setup() {
+                createCanvas(400, 400);
+                angleMode(DEGREES);
+                diam = 150;
+                offset = 0.2 * diam;
+                x = width / 2;
+                y = height / 2;
+              }
+              
+              function draw() {
+                background(220);
+              
+                fill(255, 200, 0);
+                ellipse(x, y, diam, diam);
+              
+                fill(0, 0, 255);
+                ellipse(x - offset, y - offset, diam / 7, diam / 7);
+                ellipse(x + offset, y - offset, diam / 7, diam / 7);
+                noFill();
+                arc(x, y, diam * 0.6, diam * 0.4, 0, 180);
+              }
+
+</script>
+        </div>
+
+        
+
+
+        <div class="flexbox-item  flexbox-item-2">
+            Draw:Here are some small
+            examples of how to draw things. Read and experiment with the code. Then, either try to reproduce the code or try your own by "spinning off," or "remixing" what you see here. The essence of learning is through exploration and mistakes cast as learning opportunities. </div>
+
+
+    </div>
+
+
+  <div class="another-container">
+            This text is the content of the box. Look at that photo! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <img src="../images/rhs.jpg" width=300>
+        </div>
+
+
+</body></html>
